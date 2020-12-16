@@ -67,7 +67,10 @@ struct Node {
 // linked lists are identical else return false.
 bool areIdentical(struct Node *head1, struct Node *head2)
 {
-    // Code here
+    // c1 represents count of nodes in  first linkedlist with starting node as head1.
+    // c2 represents count of nodes in second linkedlist with starting node as head2.
+    // t1 represents pointer to starting node of first linked list.
+    // t2 represents pointer to starting node of second linked list.
     int c1=0,c2=0;Node * t1=head1;Node * t2=head2;
     while(t1!=NULL){
         t1=t1->next;
